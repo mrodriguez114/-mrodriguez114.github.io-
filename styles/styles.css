@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+header, nav, main, footer { 
+    display: block; 
+}
+
+body { 
+    background-color: #1B2E1E;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper { 
+    width: 90%;
+    max-width: 960px;
+    margin: auto;
+    background-color: #E6D3A7;
+    color: #1B2E1E;
+    box-shadow: 5px 5px 5px #000000;
+}
+
+h1 { 
+    background-repeat: no-repeat;
+    background-color: #4B5320;
+    color: #F39C12;
+    min-height: 110px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.1em;
+    padding: 20px 25px;
+    text-shadow: 3px 3px 3px #000000;
+    margin: 0;
+}
+
+nav { 
+    padding-top: 10px;
+    float: left;
+    width: 200px; 
+}
+
+nav ul { 
+    list-style-type: none; 
+    padding-left: 20px;
+}
+
+nav li { 
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+nav a { 
+    text-decoration: none; 
+}
+
+nav a:link { 
+    color: #4B5320; 
+}
+
+nav a:visited { 
+    color: #5C4033; 
+}
+
+nav a:hover, nav a:focus { 
+    color: #F39C12; 
+    text-decoration: underline;
+}
+
+nav a:active { 
+    color: #C0392B; 
+}
+
+main { 
+    background-color: #F4E8BC;
+    margin-left: 200px;
+    padding: 15px 25px 25px 25px;    
+    min-height: 300px;
+    overflow: auto;
+}
+
+main img { 
+    float: right;
+    padding: 10px 0 15px 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FAF3DC;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #1B2E1E;
+}
+
+th, td {
+    border: 1px solid #4B5320;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4B5320;
+    color: #F39C12;
+}
+
+tr:nth-child(even) {
+    background-color: #EFE2B8;
+}
+
+/* Form Styling */
+form {
+    background-color: #FAF3DC;
+    padding: 20px;
+    border: 1px solid #4B5320;
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.inline-label {
+    display: inline;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #5C4033;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+fieldset {
+    border: 1px solid #4B5320;
+    margin-top: 15px;
+    padding: 10px 15px;
+    max-width: 400px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4B5320;
+}
+
+input[type="submit"] {
+    display: block;
+    margin-top: 18px;
+    background-color: #4B5320;
+    color: #F39C12;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1B2E1E;
+    color: #FFFFFF;
+}
+
+footer { 
+    clear: both;
+    background-color: #4B5320;
+    color: #F8F9FA;
+    padding: 20px;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+
+footer a:link {
+    color: #F39C12;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: #E67E22;
+}
+
+footer a:hover, footer a:focus {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+footer a:active {
+    color: #C0392B;
+}
+
+/* Tablet Media Query */
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        width: 100%;
+        box-shadow: none;
+    }
+    h1 {
+        font-size: 2.4em;
+    }
+}
+
+/* Mobile Phone Media Query */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+        min-height: auto;
+        text-align: center;
+    }
+    nav {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        border-bottom: 1px solid #4B5320;
+        padding: 10px 0;
+    }
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+    main img {
+        float: none;
+        display: block;
+        margin: 15px auto;
+        padding: 0;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Sleepy Sasquatch Outpost | Reservations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your stay and select nocturnal cryptid tracking packages at The Sleepy Sasquatch Outpost.">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>The Sleepy Sasquatch Outpost</h1>
+    </header>
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/yeti_suite.html">The Yeti Suite</a></li>
+            <li><a href="rooms/bigfoot_bunker.html">The Bigfoot Bunker</a></li>
+            <li><a href="rooms/mothman_loft.html">The Mothman Loft</a></li>
+            <li><a href="events/cryptid_expeditions.html">Weekend Events</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Reserve Your Research Station</h2>
+        <p>Complete the form below to book your quarters and customize your field expedition gear. Required fields are marked with an asterisk (*).</p>
+
+        <form id="reservationForm" action="#" method="post">
+            <label for="fullName">* Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">* Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">* Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">* Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="roomSelect">* Select Rooms:</label>
+            <select id="roomSelect" name="roomSelect">
+                <option value="yeti">The Yeti Suite ($165/night)</option>
+                <option value="bunker">The Bigfoot Bunker ($180/night)</option>
+                <option value="loft">The Mothman Loft ($195/night)</option>
+            </select>
+
+            <fieldset>
+                <legend>Experience Level:</legend>
+                <input type="radio" id="novice" name="experience" value="Novice" checked>
+                <label class="inline-label" for="novice">Novice Spotter</label><br>
+
+                <input type="radio" id="veteran" name="experience" value="Veteran">
+                <label class="inline-label" for="veteran">Veteran Field Researcher</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Add-On Outpost Services:</legend>
+                <input type="checkbox" id="nvGoggles" name="services" value="Night-Vision Goggles">
+                <label class="inline-label" for="nvGoggles">Infrared Night-Vision Goggles ($15/stay)</label><br>
+
+                <input type="checkbox" id="castingKit" name="services" value="Plaster Casting Kit">
+                <label class="inline-label" for="castingKit">Plaster Footprint Casting Kit ($20/stay)</label><br>
+
+                <input type="checkbox" id="thermalHunt" name="services" value="Midnight Thermal Hunt">
+                <label class="inline-label" for="thermalHunt">Guided Midnight Thermal Hunt ($35/person)</label>
+            </fieldset>
+
+            <label for="comments">Special Requests or Sighting Notes:</label>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
+            <input type="submit" value="Submit Reservation">
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; 2026<br>
+        <a href="mailto:mrodriguez114@amarillocollege.com">Matthew Rodriguez</a>
+    </footer>
+</div>
+</body>
+</html>
